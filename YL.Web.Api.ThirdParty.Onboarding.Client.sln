@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YL.Web.Api.ThirdParty.Onboarding.Client", "src\YL.Web.Api.ThirdParty.Onboarding.Client\YL.Web.Api.ThirdParty.Onboarding.Client.csproj", "{E4C0FA94-6F4A-4C9B-9A48-9EAD52342DC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YL.Web.Api.ThirdParty.Onboarding.Client.Test", "src\YL.Web.Api.ThirdParty.Onboarding.Client.Test\YL.Web.Api.ThirdParty.Onboarding.Client.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E1C2F67-56B4-42A8-9ECB-A0A79B039D67}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1F854195-A0CE-4A78-AD50-04BF2D679A7E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\AccountDetailsModel.md = docs\AccountDetailsModel.md
+		docs\AddressModel.md = docs\AddressModel.md
+		docs\CreateThirdPartyAdvanceOnboardingResultModel.md = docs\CreateThirdPartyAdvanceOnboardingResultModel.md
+		docs\DateModel.md = docs\DateModel.md
+		docs\FreeTextQuestionModel.md = docs\FreeTextQuestionModel.md
+		docs\InlineObject.md = docs\InlineObject.md
+		docs\InlineObject1.md = docs\InlineObject1.md
+		docs\InlineObject2.md = docs\InlineObject2.md
+		docs\KycQuestionsModel.md = docs\KycQuestionsModel.md
+		docs\LeadsApi.md = docs\LeadsApi.md
+		docs\PaymentGatewayModel.md = docs\PaymentGatewayModel.md
+		docs\ProblemDetails.md = docs\ProblemDetails.md
+		docs\SaveBankStatementDocumentResultModel.md = docs\SaveBankStatementDocumentResultModel.md
+		docs\SavePaymentDataDocumentResultModel.md = docs\SavePaymentDataDocumentResultModel.md
+		docs\SaveSignficantPersonKycDocumentResultModel.md = docs\SaveSignficantPersonKycDocumentResultModel.md
+		docs\SaveSignificantPersonsResultModel.md = docs\SaveSignificantPersonsResultModel.md
+		docs\SignificantPersonModel.md = docs\SignificantPersonModel.md
+		docs\SignificantPersonsModel.md = docs\SignificantPersonsModel.md
+		docs\ThirdPartyOnboardingModel.md = docs\ThirdPartyOnboardingModel.md
+		docs\YesNoQuestionModel.md = docs\YesNoQuestionModel.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C0FA94-6F4A-4C9B-9A48-9EAD52342DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C0FA94-6F4A-4C9B-9A48-9EAD52342DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C0FA94-6F4A-4C9B-9A48-9EAD52342DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C0FA94-6F4A-4C9B-9A48-9EAD52342DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F854195-A0CE-4A78-AD50-04BF2D679A7E} = {1E1C2F67-56B4-42A8-9ECB-A0A79B039D67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20F4491B-8EAF-4FC3-A1B1-F71900773FBE}
+	EndGlobalSection
+EndGlobal
