@@ -36,10 +36,21 @@ NOTE: RestSharp versions greater than 105.1.0 have a bug which causes file uploa
 
 <a name="installation"></a>
 ## Installation
-Run the following command in powershell: 
+
+*Install dotnet dotnet:*
 ```
-Install-Package YL.Web.Api.ThirdParty.Onboarding.Client
+dotnet add package YL.Web.Api.ThirdParty.Onboarding.Client --version 1.0.1
 ```
+*Install with nuget:*
+```
+Install-Package YL.Web.Api.ThirdParty.Onboarding.Client -Version 1.0.1
+```
+
+*Add direct package reference to you project file:*
+```
+<PackageReference Include="YL.Web.Api.ThirdParty.Onboarding.Client" Version="1.0.1" />
+```
+
 More detail on nuget: [YL.Web.Api.ThirdParty.Onboarding.Client]( https://www.nuget.org/packages/YL.Web.Api.ThirdParty.Onboarding.Client/1.0.1)
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
