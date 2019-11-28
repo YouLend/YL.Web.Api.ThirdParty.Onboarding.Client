@@ -53,7 +53,7 @@ Install-Package YL.Web.Api.ThirdParty.Onboarding.Client -Version 1.0.1
 
 More detail on nuget: [YL.Web.Api.ThirdParty.Onboarding.Client]( https://www.nuget.org/packages/YL.Web.Api.ThirdParty.Onboarding.Client/1.0.1)
 
-Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
+
 ```csharp
 using YL.Web.Api.ThirdParty.Onboarding.Client.Api;
 using YL.Web.Api.ThirdParty.Onboarding.Client.Client;
