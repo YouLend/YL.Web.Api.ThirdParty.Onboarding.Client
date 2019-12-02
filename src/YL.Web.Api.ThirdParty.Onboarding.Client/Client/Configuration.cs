@@ -96,7 +96,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Client
         public Configuration()
         {
             UserAgent = "OpenAPI-Generator/1.0.0/csharp";
-            BasePath = "http://localhost:61178";
+            BasePath = "https://dev.youlendapi.com/onboarding";
             DefaultHeaders = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
             ApiKeyPrefix = new ConcurrentDictionary<string, string>();
@@ -113,7 +113,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Client
             IDictionary<string, string> defaultHeaders,
             IDictionary<string, string> apiKey,
             IDictionary<string, string> apiKeyPrefix,
-            string basePath = "http://localhost:61178") : this()
+            string basePath = "https://dev.youlendapi.com/onboarding") : this()
         {
             if (string.IsNullOrWhiteSpace(basePath))
                 throw new ArgumentException("The provided basePath is invalid.", "basePath");

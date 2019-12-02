@@ -80,23 +80,23 @@ namespace Example
             {
                 BasePath = "https://dev.youlendapi.com/onboarding",
                 AccessToken =
-                    "YOUR_TOKEN"
+                    "YOUR_ACCES_TOKEN"
             };
-            // Configure OAuth2 access token for authorization: oauth2
+            
 
-            var apiInstance = new LeadsApi(config);
+            var apiInstance = new DocumentSigningApi(config);
             var leadId = new Guid(); // Guid | The lead id
             var apiVersion = apiVersion_example;  // string |  (optional) 
-            var accountDetailsModel = new AccountDetailsModel(); // AccountDetailsModel |  (optional) 
 
             try
             {
-                // An endpoint for adding account details to a lead
-                apiInstance.LeadsLeadIdAccountdetailsPut(leadId, apiVersion, accountDetailsModel);
+                // Gets the document signing for specified document
+                DocumentSigningViewModel result = apiInstance.DocumentSigningDocumentSigningIdGet(documentSigningId, apiVersion);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling LeadsApi.LeadsLeadIdAccountdetailsPut: " + e.Message );
+                Debug.Print("Exception when calling DocumentSigningApi.DocumentSigningDocumentSigningIdGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -113,13 +113,25 @@ All URIs are relative to *https://dev.youlendapi.com/onboarding*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*DocumentSigningApi* | [**DocumentSigningDocumentSigningIdGet**](docs/DocumentSigningApi.md#documentsigningdocumentsigningidget) | **GET** /DocumentSigning/{documentSigningId} | Gets the document signing for specified document
+*LeadsApi* | [**LeadsLeadIdAccountdetailsGet**](docs/LeadsApi.md#leadsleadidaccountdetailsget) | **GET** /Leads/{leadId}/accountdetails | An endpoint for adding account details to a lead
 *LeadsApi* | [**LeadsLeadIdAccountdetailsPut**](docs/LeadsApi.md#leadsleadidaccountdetailsput) | **PUT** /Leads/{leadId}/accountdetails | An endpoint for adding account details to a lead
+*LeadsApi* | [**LeadsLeadIdDetailsGet**](docs/LeadsApi.md#leadsleadiddetailsget) | **GET** /Leads/{leadId}/details | An endpoint for viewing the onboarding details of a lead
 *LeadsApi* | [**LeadsLeadIdDocumentsBankstatementsPost**](docs/LeadsApi.md#leadsleadiddocumentsbankstatementspost) | **POST** /Leads/{leadId}/documents/bankstatements | An endpoint for adding bank statements to a lead
+*LeadsApi* | [**LeadsLeadIdDocumentsGet**](docs/LeadsApi.md#leadsleadiddocumentsget) | **GET** /Leads/{leadId}/documents | An endpoint for getting kyc documents for a significant person
 *LeadsApi* | [**LeadsLeadIdDocumentsPaymentdataPost**](docs/LeadsApi.md#leadsleadiddocumentspaymentdatapost) | **POST** /Leads/{leadId}/documents/paymentdata | An endpoint for adding payment data documents to a lead
 *LeadsApi* | [**LeadsLeadIdDocumentsSignificantpersonsSignificantPersonIdKycDocumentTypePost**](docs/LeadsApi.md#leadsleadiddocumentssignificantpersonssignificantpersonidkycdocumenttypepost) | **POST** /Leads/{leadId}/documents/significantpersons/{significantPersonId}/{kycDocumentType} | An endpoint for adding kyc documents for a significant person
+*LeadsApi* | [**LeadsLeadIdKycquestionsGet**](docs/LeadsApi.md#leadsleadidkycquestionsget) | **GET** /Leads/{leadId}/kycquestions | An endpoint for viewing the kyc questions of a lead
 *LeadsApi* | [**LeadsLeadIdKycquestionsPut**](docs/LeadsApi.md#leadsleadidkycquestionsput) | **PUT** /Leads/{leadId}/kycquestions | An endpoint for adding KYC question answers to a lead
+*LeadsApi* | [**LeadsLeadIdOfferGet**](docs/LeadsApi.md#leadsleadidofferget) | **GET** /Leads/{leadId}/offer | An endpoint for getting the loan offer
+*LeadsApi* | [**LeadsLeadIdOfferPost**](docs/LeadsApi.md#leadsleadidofferpost) | **POST** /Leads/{leadId}/offer | An endpoint for creating the loan offer
+*LeadsApi* | [**LeadsLeadIdOptionsGet**](docs/LeadsApi.md#leadsleadidoptionsget) | **GET** /Leads/{leadId}/options | An endpoint for getting the loan options for a lead
+*LeadsApi* | [**LeadsLeadIdOrganisationdetailsPut**](docs/LeadsApi.md#leadsleadidorganisationdetailsput) | **PUT** /Leads/{leadId}/organisationdetails | An endpoint for adding organisation details
+*LeadsApi* | [**LeadsLeadIdOrganisationsdetailsGet**](docs/LeadsApi.md#leadsleadidorganisationsdetailsget) | **GET** /Leads/{leadId}/organisationsdetails | An endpoint for viewing the organisation details of a lead
+*LeadsApi* | [**LeadsLeadIdPaymentdataGet**](docs/LeadsApi.md#leadsleadidpaymentdataget) | **GET** /Leads/{leadId}/paymentdata | An endpoint for viewing the payment data of a lead
 *LeadsApi* | [**LeadsLeadIdPaymentgatewaysPost**](docs/LeadsApi.md#leadsleadidpaymentgatewayspost) | **POST** /Leads/{leadId}/paymentgateways | An endpoint for adding a payment gateway to a lead
 *LeadsApi* | [**LeadsLeadIdSignificantpersonsPut**](docs/LeadsApi.md#leadsleadidsignificantpersonsput) | **PUT** /Leads/{leadId}/significantpersons | An endpoint for updating significant persons for a lead
+*LeadsApi* | [**LeadsLeadIdStatePut**](docs/LeadsApi.md#leadsleadidstateput) | **PUT** /Leads/{leadId}/state | An endpoint for updating the state of an onboarding
 *LeadsApi* | [**LeadsPost**](docs/LeadsApi.md#leadspost) | **POST** /Leads | Creates a Youlend Advance Lead
 
 
@@ -127,21 +139,49 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [Model.AccountDetailsModel](docs/AccountDetailsModel.md)
+ - [Model.AccountV2StepModel](docs/AccountV2StepModel.md)
+ - [Model.Address](docs/Address.md)
  - [Model.AddressModel](docs/AddressModel.md)
+ - [Model.AdvanceSignUpData](docs/AdvanceSignUpData.md)
  - [Model.CreateThirdPartyAdvanceOnboardingResultModel](docs/CreateThirdPartyAdvanceOnboardingResultModel.md)
+ - [Model.CreditRatingBandParameters](docs/CreditRatingBandParameters.md)
  - [Model.DateModel](docs/DateModel.md)
+ - [Model.Document](docs/Document.md)
+ - [Model.DocumentMetadataModel](docs/DocumentMetadataModel.md)
+ - [Model.DocumentSigningViewModel](docs/DocumentSigningViewModel.md)
  - [Model.FreeTextQuestionModel](docs/FreeTextQuestionModel.md)
+ - [Model.Industry](docs/Industry.md)
  - [Model.InlineObject](docs/InlineObject.md)
  - [Model.InlineObject1](docs/InlineObject1.md)
  - [Model.InlineObject2](docs/InlineObject2.md)
+ - [Model.KycDocumentModel](docs/KycDocumentModel.md)
+ - [Model.KycDocumentsV2StepModel](docs/KycDocumentsV2StepModel.md)
+ - [Model.KycFreeTextQuestion](docs/KycFreeTextQuestion.md)
+ - [Model.KycQuestions](docs/KycQuestions.md)
  - [Model.KycQuestionsModel](docs/KycQuestionsModel.md)
+ - [Model.KycQuestionsStepView](docs/KycQuestionsStepView.md)
+ - [Model.KycYesNoQuestion](docs/KycYesNoQuestion.md)
+ - [Model.LoanOptionModel](docs/LoanOptionModel.md)
+ - [Model.LoanSizingModel](docs/LoanSizingModel.md)
+ - [Model.MerchantIdsModel](docs/MerchantIdsModel.md)
+ - [Model.OfferStepModel](docs/OfferStepModel.md)
+ - [Model.OnboardingOfferModel](docs/OnboardingOfferModel.md)
+ - [Model.OnboardingOrganisationDetailsModel](docs/OnboardingOrganisationDetailsModel.md)
+ - [Model.OnboardingStateModel](docs/OnboardingStateModel.md)
+ - [Model.OnboardingV2View](docs/OnboardingV2View.md)
+ - [Model.OrganisationDetailsV3](docs/OrganisationDetailsV3.md)
+ - [Model.OrganisationDetailsV3StepView](docs/OrganisationDetailsV3StepView.md)
+ - [Model.PaymentDataStepView](docs/PaymentDataStepView.md)
  - [Model.PaymentGatewayModel](docs/PaymentGatewayModel.md)
  - [Model.ProblemDetails](docs/ProblemDetails.md)
  - [Model.SaveBankStatementDocumentResultModel](docs/SaveBankStatementDocumentResultModel.md)
  - [Model.SavePaymentDataDocumentResultModel](docs/SavePaymentDataDocumentResultModel.md)
  - [Model.SaveSignficantPersonKycDocumentResultModel](docs/SaveSignficantPersonKycDocumentResultModel.md)
  - [Model.SaveSignificantPersonsResultModel](docs/SaveSignificantPersonsResultModel.md)
+ - [Model.SignatorySigningViewModel](docs/SignatorySigningViewModel.md)
+ - [Model.SignificantPersonDocumentsModel](docs/SignificantPersonDocumentsModel.md)
  - [Model.SignificantPersonModel](docs/SignificantPersonModel.md)
+ - [Model.SignificantPersonV2](docs/SignificantPersonV2.md)
  - [Model.SignificantPersonsModel](docs/SignificantPersonsModel.md)
  - [Model.ThirdPartyOnboardingModel](docs/ThirdPartyOnboardingModel.md)
  - [Model.YesNoQuestionModel](docs/YesNoQuestionModel.md)

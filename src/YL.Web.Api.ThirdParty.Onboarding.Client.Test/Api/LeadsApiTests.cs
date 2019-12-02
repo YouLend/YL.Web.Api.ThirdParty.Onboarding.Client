@@ -56,6 +56,19 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
 
         
         /// <summary>
+        /// Test LeadsLeadIdAccountdetailsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdAccountdetailsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdAccountdetailsGet(leadId, apiVersion);
+            //Assert.IsType<AccountV2StepModel> (response, "response is AccountV2StepModel");
+        }
+        
+        /// <summary>
         /// Test LeadsLeadIdAccountdetailsPut
         /// </summary>
         [Fact]
@@ -70,6 +83,19 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
         }
         
         /// <summary>
+        /// Test LeadsLeadIdDetailsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdDetailsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdDetailsGet(leadId, apiVersion);
+            //Assert.IsType<OnboardingV2View> (response, "response is OnboardingV2View");
+        }
+        
+        /// <summary>
         /// Test LeadsLeadIdDocumentsBankstatementsPost
         /// </summary>
         [Fact]
@@ -81,6 +107,19 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
             //System.IO.Stream file = null;
             //var response = instance.LeadsLeadIdDocumentsBankstatementsPost(leadId, apiVersion, file);
             //Assert.IsType<SaveBankStatementDocumentResultModel> (response, "response is SaveBankStatementDocumentResultModel");
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdDocumentsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdDocumentsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdDocumentsGet(leadId, apiVersion);
+            //Assert.IsType<KycDocumentsV2StepModel> (response, "response is KycDocumentsV2StepModel");
         }
         
         /// <summary>
@@ -114,6 +153,19 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
         }
         
         /// <summary>
+        /// Test LeadsLeadIdKycquestionsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdKycquestionsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdKycquestionsGet(leadId, apiVersion);
+            //Assert.IsType<KycQuestionsStepView> (response, "response is KycQuestionsStepView");
+        }
+        
+        /// <summary>
         /// Test LeadsLeadIdKycquestionsPut
         /// </summary>
         [Fact]
@@ -125,6 +177,86 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
             //KycQuestionsModel kycQuestionsModel = null;
             //instance.LeadsLeadIdKycquestionsPut(leadId, apiVersion, kycQuestionsModel);
             
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdOfferGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdOfferGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdOfferGet(leadId, apiVersion);
+            //Assert.IsType<OfferStepModel> (response, "response is OfferStepModel");
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdOfferPost
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdOfferPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //OnboardingOfferModel onboardingOfferModel = null;
+            //instance.LeadsLeadIdOfferPost(leadId, apiVersion, onboardingOfferModel);
+            
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdOptionsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdOptionsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdOptionsGet(leadId, apiVersion);
+            //Assert.IsType<LoanSizingModel> (response, "response is LoanSizingModel");
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdOrganisationdetailsPut
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdOrganisationdetailsPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = null;
+            //instance.LeadsLeadIdOrganisationdetailsPut(leadId, apiVersion, onboardingOrganisationDetailsModel);
+            
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdOrganisationsdetailsGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdOrganisationsdetailsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdOrganisationsdetailsGet(leadId, apiVersion);
+            //Assert.IsType<OrganisationDetailsV3StepView> (response, "response is OrganisationDetailsV3StepView");
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdPaymentdataGet
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdPaymentdataGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //var response = instance.LeadsLeadIdPaymentdataGet(leadId, apiVersion);
+            //Assert.IsType<PaymentDataStepView> (response, "response is PaymentDataStepView");
         }
         
         /// <summary>
@@ -153,6 +285,20 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Test
             //SignificantPersonsModel significantPersonsModel = null;
             //var response = instance.LeadsLeadIdSignificantpersonsPut(leadId, apiVersion, significantPersonsModel);
             //Assert.IsType<SaveSignificantPersonsResultModel> (response, "response is SaveSignificantPersonsResultModel");
+        }
+        
+        /// <summary>
+        /// Test LeadsLeadIdStatePut
+        /// </summary>
+        [Fact]
+        public void LeadsLeadIdStatePutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid leadId = null;
+            //string apiVersion = null;
+            //OnboardingStateModel onboardingStateModel = null;
+            //instance.LeadsLeadIdStatePut(leadId, apiVersion, onboardingStateModel);
+            
         }
         
         /// <summary>

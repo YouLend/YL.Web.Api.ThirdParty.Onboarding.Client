@@ -36,6 +36,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="leadId">The lead id</param>
         /// <param name="apiVersion"> (optional)</param>
+        /// <returns>AccountV2StepModel</returns>
+        AccountV2StepModel LeadsLeadIdAccountdetailsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of AccountV2StepModel</returns>
+        ApiResponse<AccountV2StepModel> LeadsLeadIdAccountdetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for adding account details to a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
         /// <param name="accountDetailsModel"> (optional)</param>
         /// <returns></returns>
         void LeadsLeadIdAccountdetailsPut (Guid leadId, string apiVersion = default(string), AccountDetailsModel accountDetailsModel = default(AccountDetailsModel));
@@ -52,6 +75,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <param name="accountDetailsModel"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> LeadsLeadIdAccountdetailsPutWithHttpInfo (Guid leadId, string apiVersion = default(string), AccountDetailsModel accountDetailsModel = default(AccountDetailsModel));
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OnboardingV2View</returns>
+        OnboardingV2View LeadsLeadIdDetailsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OnboardingV2View</returns>
+        ApiResponse<OnboardingV2View> LeadsLeadIdDetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding bank statements to a lead
         /// </summary>
@@ -77,6 +123,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <param name="file"> (optional)</param>
         /// <returns>ApiResponse of SaveBankStatementDocumentResultModel</returns>
         ApiResponse<SaveBankStatementDocumentResultModel> LeadsLeadIdDocumentsBankstatementsPostWithHttpInfo (Guid leadId, string apiVersion = default(string), System.IO.Stream file = default(System.IO.Stream));
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>KycDocumentsV2StepModel</returns>
+        KycDocumentsV2StepModel LeadsLeadIdDocumentsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of KycDocumentsV2StepModel</returns>
+        ApiResponse<KycDocumentsV2StepModel> LeadsLeadIdDocumentsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding payment data documents to a lead
         /// </summary>
@@ -132,6 +201,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <returns>ApiResponse of SaveSignficantPersonKycDocumentResultModel</returns>
         ApiResponse<SaveSignficantPersonKycDocumentResultModel> LeadsLeadIdDocumentsSignificantpersonsSignificantPersonIdKycDocumentTypePostWithHttpInfo (Guid leadId, Guid significantPersonId, string kycDocumentType, string apiVersion = default(string), System.IO.Stream file = default(System.IO.Stream));
         /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>KycQuestionsStepView</returns>
+        KycQuestionsStepView LeadsLeadIdKycquestionsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of KycQuestionsStepView</returns>
+        ApiResponse<KycQuestionsStepView> LeadsLeadIdKycquestionsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
         /// An endpoint for adding KYC question answers to a lead
         /// </summary>
         /// <remarks>
@@ -156,6 +248,148 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <param name="kycQuestionsModel"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> LeadsLeadIdKycquestionsPutWithHttpInfo (Guid leadId, string apiVersion = default(string), KycQuestionsModel kycQuestionsModel = default(KycQuestionsModel));
+        /// <summary>
+        /// An endpoint for getting the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OfferStepModel</returns>
+        OfferStepModel LeadsLeadIdOfferGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OfferStepModel</returns>
+        ApiResponse<OfferStepModel> LeadsLeadIdOfferGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for creating the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns></returns>
+        void LeadsLeadIdOfferPost (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel));
+
+        /// <summary>
+        /// An endpoint for creating the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> LeadsLeadIdOfferPostWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel));
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead
+        /// </summary>
+        /// <remarks>
+        /// The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>LoanSizingModel</returns>
+        LoanSizingModel LeadsLeadIdOptionsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead
+        /// </summary>
+        /// <remarks>
+        /// The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of LoanSizingModel</returns>
+        ApiResponse<LoanSizingModel> LeadsLeadIdOptionsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for adding organisation details
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns></returns>
+        void LeadsLeadIdOrganisationdetailsPut (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel));
+
+        /// <summary>
+        /// An endpoint for adding organisation details
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> LeadsLeadIdOrganisationdetailsPutWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel));
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OrganisationDetailsV3StepView</returns>
+        OrganisationDetailsV3StepView LeadsLeadIdOrganisationsdetailsGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OrganisationDetailsV3StepView</returns>
+        ApiResponse<OrganisationDetailsV3StepView> LeadsLeadIdOrganisationsdetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>PaymentDataStepView</returns>
+        PaymentDataStepView LeadsLeadIdPaymentdataGet (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of PaymentDataStepView</returns>
+        ApiResponse<PaymentDataStepView> LeadsLeadIdPaymentdataGetWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding a payment gateway to a lead
         /// </summary>
@@ -207,10 +441,35 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <returns>ApiResponse of SaveSignificantPersonsResultModel</returns>
         ApiResponse<SaveSignificantPersonsResultModel> LeadsLeadIdSignificantpersonsPutWithHttpInfo (Guid leadId, string apiVersion = default(string), SignificantPersonsModel significantPersonsModel = default(SignificantPersonsModel));
         /// <summary>
+        /// An endpoint for updating the state of an onboarding
+        /// </summary>
+        /// <remarks>
+        /// The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns></returns>
+        void LeadsLeadIdStatePut (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel));
+
+        /// <summary>
+        /// An endpoint for updating the state of an onboarding
+        /// </summary>
+        /// <remarks>
+        /// The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> LeadsLeadIdStatePutWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel));
+        /// <summary>
         /// Creates a Youlend Advance Lead
         /// </summary>
         /// <remarks>
-        /// Can add sample as an example here
+        /// 
         /// </remarks>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -222,7 +481,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// Creates a Youlend Advance Lead
         /// </summary>
         /// <remarks>
-        /// Can add sample as an example here
+        /// 
         /// </remarks>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -238,6 +497,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
     public interface ILeadsApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
+        /// <summary>
+        /// An endpoint for adding account details to a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of AccountV2StepModel</returns>
+        System.Threading.Tasks.Task<AccountV2StepModel> LeadsLeadIdAccountdetailsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (AccountV2StepModel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountV2StepModel>> LeadsLeadIdAccountdetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding account details to a lead
         /// </summary>
@@ -264,6 +546,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> LeadsLeadIdAccountdetailsPutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), AccountDetailsModel accountDetailsModel = default(AccountDetailsModel));
         /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OnboardingV2View</returns>
+        System.Threading.Tasks.Task<OnboardingV2View> LeadsLeadIdDetailsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OnboardingV2View)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OnboardingV2View>> LeadsLeadIdDetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
         /// An endpoint for adding bank statements to a lead
         /// </summary>
         /// <remarks>
@@ -288,6 +593,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <param name="file"> (optional)</param>
         /// <returns>Task of ApiResponse (SaveBankStatementDocumentResultModel)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaveBankStatementDocumentResultModel>> LeadsLeadIdDocumentsBankstatementsPostAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), System.IO.Stream file = default(System.IO.Stream));
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of KycDocumentsV2StepModel</returns>
+        System.Threading.Tasks.Task<KycDocumentsV2StepModel> LeadsLeadIdDocumentsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (KycDocumentsV2StepModel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<KycDocumentsV2StepModel>> LeadsLeadIdDocumentsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding payment data documents to a lead
         /// </summary>
@@ -343,6 +671,29 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <returns>Task of ApiResponse (SaveSignficantPersonKycDocumentResultModel)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaveSignficantPersonKycDocumentResultModel>> LeadsLeadIdDocumentsSignificantpersonsSignificantPersonIdKycDocumentTypePostAsyncWithHttpInfo (Guid leadId, Guid significantPersonId, string kycDocumentType, string apiVersion = default(string), System.IO.Stream file = default(System.IO.Stream));
         /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of KycQuestionsStepView</returns>
+        System.Threading.Tasks.Task<KycQuestionsStepView> LeadsLeadIdKycquestionsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (KycQuestionsStepView)</returns>
+        System.Threading.Tasks.Task<ApiResponse<KycQuestionsStepView>> LeadsLeadIdKycquestionsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
         /// An endpoint for adding KYC question answers to a lead
         /// </summary>
         /// <remarks>
@@ -367,6 +718,148 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <param name="kycQuestionsModel"> (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> LeadsLeadIdKycquestionsPutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), KycQuestionsModel kycQuestionsModel = default(KycQuestionsModel));
+        /// <summary>
+        /// An endpoint for getting the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OfferStepModel</returns>
+        System.Threading.Tasks.Task<OfferStepModel> LeadsLeadIdOfferGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OfferStepModel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OfferStepModel>> LeadsLeadIdOfferGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for creating the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task LeadsLeadIdOfferPostAsync (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel));
+
+        /// <summary>
+        /// An endpoint for creating the loan offer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeadsLeadIdOfferPostAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel));
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead
+        /// </summary>
+        /// <remarks>
+        /// The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of LoanSizingModel</returns>
+        System.Threading.Tasks.Task<LoanSizingModel> LeadsLeadIdOptionsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead
+        /// </summary>
+        /// <remarks>
+        /// The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (LoanSizingModel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<LoanSizingModel>> LeadsLeadIdOptionsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for adding organisation details
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task LeadsLeadIdOrganisationdetailsPutAsync (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel));
+
+        /// <summary>
+        /// An endpoint for adding organisation details
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeadsLeadIdOrganisationdetailsPutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel));
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OrganisationDetailsV3StepView</returns>
+        System.Threading.Tasks.Task<OrganisationDetailsV3StepView> LeadsLeadIdOrganisationsdetailsGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OrganisationDetailsV3StepView)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OrganisationDetailsV3StepView>> LeadsLeadIdOrganisationsdetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of PaymentDataStepView</returns>
+        System.Threading.Tasks.Task<PaymentDataStepView> LeadsLeadIdPaymentdataGetAsync (Guid leadId, string apiVersion = default(string));
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (PaymentDataStepView)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PaymentDataStepView>> LeadsLeadIdPaymentdataGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string));
         /// <summary>
         /// An endpoint for adding a payment gateway to a lead
         /// </summary>
@@ -418,10 +911,35 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// <returns>Task of ApiResponse (SaveSignificantPersonsResultModel)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaveSignificantPersonsResultModel>> LeadsLeadIdSignificantpersonsPutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), SignificantPersonsModel significantPersonsModel = default(SignificantPersonsModel));
         /// <summary>
+        /// An endpoint for updating the state of an onboarding
+        /// </summary>
+        /// <remarks>
+        /// The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task LeadsLeadIdStatePutAsync (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel));
+
+        /// <summary>
+        /// An endpoint for updating the state of an onboarding
+        /// </summary>
+        /// <remarks>
+        /// The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </remarks>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeadsLeadIdStatePutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel));
+        /// <summary>
         /// Creates a Youlend Advance Lead
         /// </summary>
         /// <remarks>
-        /// Can add sample as an example here
+        /// 
         /// </remarks>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -433,7 +951,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         /// Creates a Youlend Advance Lead
         /// </summary>
         /// <remarks>
-        /// Can add sample as an example here
+        /// 
         /// </remarks>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -558,6 +1076,143 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
                 return _exceptionFactory;
             }
             set { _exceptionFactory = value; }
+        }
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>AccountV2StepModel</returns>
+        public AccountV2StepModel LeadsLeadIdAccountdetailsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<AccountV2StepModel> localVarResponse = LeadsLeadIdAccountdetailsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of AccountV2StepModel</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< AccountV2StepModel > LeadsLeadIdAccountdetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdAccountdetailsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< AccountV2StepModel >("/Leads/{leadId}/accountdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdAccountdetailsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of AccountV2StepModel</returns>
+        public async System.Threading.Tasks.Task<AccountV2StepModel> LeadsLeadIdAccountdetailsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<AccountV2StepModel> localVarResponse = await LeadsLeadIdAccountdetailsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for adding account details to a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (AccountV2StepModel)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<AccountV2StepModel>> LeadsLeadIdAccountdetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdAccountdetailsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<AccountV2StepModel>("/Leads/{leadId}/accountdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdAccountdetailsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
         }
 
         /// <summary>
@@ -697,6 +1352,143 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("LeadsLeadIdAccountdetailsPut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OnboardingV2View</returns>
+        public OnboardingV2View LeadsLeadIdDetailsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OnboardingV2View> localVarResponse = LeadsLeadIdDetailsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OnboardingV2View</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< OnboardingV2View > LeadsLeadIdDetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdDetailsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< OnboardingV2View >("/Leads/{leadId}/details", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdDetailsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OnboardingV2View</returns>
+        public async System.Threading.Tasks.Task<OnboardingV2View> LeadsLeadIdDetailsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OnboardingV2View> localVarResponse = await LeadsLeadIdDetailsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the onboarding details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OnboardingV2View)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OnboardingV2View>> LeadsLeadIdDetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdDetailsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<OnboardingV2View>("/Leads/{leadId}/details", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdDetailsGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -848,6 +1640,143 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("LeadsLeadIdDocumentsBankstatementsPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>KycDocumentsV2StepModel</returns>
+        public KycDocumentsV2StepModel LeadsLeadIdDocumentsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycDocumentsV2StepModel> localVarResponse = LeadsLeadIdDocumentsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of KycDocumentsV2StepModel</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< KycDocumentsV2StepModel > LeadsLeadIdDocumentsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdDocumentsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< KycDocumentsV2StepModel >("/Leads/{leadId}/documents", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdDocumentsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of KycDocumentsV2StepModel</returns>
+        public async System.Threading.Tasks.Task<KycDocumentsV2StepModel> LeadsLeadIdDocumentsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycDocumentsV2StepModel> localVarResponse = await LeadsLeadIdDocumentsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for getting kyc documents for a significant person 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (KycDocumentsV2StepModel)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycDocumentsV2StepModel>> LeadsLeadIdDocumentsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdDocumentsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<KycDocumentsV2StepModel>("/Leads/{leadId}/documents", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdDocumentsGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1189,6 +2118,143 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         }
 
         /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>KycQuestionsStepView</returns>
+        public KycQuestionsStepView LeadsLeadIdKycquestionsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycQuestionsStepView> localVarResponse = LeadsLeadIdKycquestionsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of KycQuestionsStepView</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< KycQuestionsStepView > LeadsLeadIdKycquestionsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdKycquestionsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< KycQuestionsStepView >("/Leads/{leadId}/kycquestions", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdKycquestionsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of KycQuestionsStepView</returns>
+        public async System.Threading.Tasks.Task<KycQuestionsStepView> LeadsLeadIdKycquestionsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycQuestionsStepView> localVarResponse = await LeadsLeadIdKycquestionsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the kyc questions of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (KycQuestionsStepView)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<KycQuestionsStepView>> LeadsLeadIdKycquestionsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdKycquestionsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<KycQuestionsStepView>("/Leads/{leadId}/kycquestions", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdKycquestionsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
         /// An endpoint for adding KYC question answers to a lead 
         /// </summary>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1325,6 +2391,840 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("LeadsLeadIdKycquestionsPut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OfferStepModel</returns>
+        public OfferStepModel LeadsLeadIdOfferGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OfferStepModel> localVarResponse = LeadsLeadIdOfferGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OfferStepModel</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< OfferStepModel > LeadsLeadIdOfferGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOfferGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< OfferStepModel >("/Leads/{leadId}/offer", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOfferGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OfferStepModel</returns>
+        public async System.Threading.Tasks.Task<OfferStepModel> LeadsLeadIdOfferGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OfferStepModel> localVarResponse = await LeadsLeadIdOfferGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OfferStepModel)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OfferStepModel>> LeadsLeadIdOfferGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOfferGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<OfferStepModel>("/Leads/{leadId}/offer", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOfferGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for creating the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns></returns>
+        public void LeadsLeadIdOfferPost (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel))
+        {
+             LeadsLeadIdOfferPostWithHttpInfo(leadId, apiVersion, onboardingOfferModel);
+        }
+
+        /// <summary>
+        /// An endpoint for creating the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object> LeadsLeadIdOfferPostWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOfferPost");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingOfferModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/Leads/{leadId}/offer", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOfferPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for creating the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task LeadsLeadIdOfferPostAsync (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel))
+        {
+             await LeadsLeadIdOfferPostAsyncWithHttpInfo(leadId, apiVersion, onboardingOfferModel);
+
+        }
+
+        /// <summary>
+        /// An endpoint for creating the loan offer 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOfferModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object>> LeadsLeadIdOfferPostAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOfferModel onboardingOfferModel = default(OnboardingOfferModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOfferPost");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingOfferModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/Leads/{leadId}/offer", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOfferPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>LoanSizingModel</returns>
+        public LoanSizingModel LeadsLeadIdOptionsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<LoanSizingModel> localVarResponse = LeadsLeadIdOptionsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of LoanSizingModel</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< LoanSizingModel > LeadsLeadIdOptionsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOptionsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< LoanSizingModel >("/Leads/{leadId}/options", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOptionsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of LoanSizingModel</returns>
+        public async System.Threading.Tasks.Task<LoanSizingModel> LeadsLeadIdOptionsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<LoanSizingModel> localVarResponse = await LeadsLeadIdOptionsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for getting the loan options for a lead The available loan options are accessed through this endpoint.  The loan options must first be generated by Banking Circle staff before it is made available through this endpoint.
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (LoanSizingModel)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<LoanSizingModel>> LeadsLeadIdOptionsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOptionsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<LoanSizingModel>("/Leads/{leadId}/options", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOptionsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for adding organisation details 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns></returns>
+        public void LeadsLeadIdOrganisationdetailsPut (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel))
+        {
+             LeadsLeadIdOrganisationdetailsPutWithHttpInfo(leadId, apiVersion, onboardingOrganisationDetailsModel);
+        }
+
+        /// <summary>
+        /// An endpoint for adding organisation details 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object> LeadsLeadIdOrganisationdetailsPutWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOrganisationdetailsPut");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingOrganisationDetailsModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Put<Object>("/Leads/{leadId}/organisationdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOrganisationdetailsPut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for adding organisation details 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task LeadsLeadIdOrganisationdetailsPutAsync (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel))
+        {
+             await LeadsLeadIdOrganisationdetailsPutAsyncWithHttpInfo(leadId, apiVersion, onboardingOrganisationDetailsModel);
+
+        }
+
+        /// <summary>
+        /// An endpoint for adding organisation details 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingOrganisationDetailsModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object>> LeadsLeadIdOrganisationdetailsPutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingOrganisationDetailsModel onboardingOrganisationDetailsModel = default(OnboardingOrganisationDetailsModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOrganisationdetailsPut");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingOrganisationDetailsModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PutAsync<Object>("/Leads/{leadId}/organisationdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOrganisationdetailsPut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>OrganisationDetailsV3StepView</returns>
+        public OrganisationDetailsV3StepView LeadsLeadIdOrganisationsdetailsGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OrganisationDetailsV3StepView> localVarResponse = LeadsLeadIdOrganisationsdetailsGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of OrganisationDetailsV3StepView</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< OrganisationDetailsV3StepView > LeadsLeadIdOrganisationsdetailsGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOrganisationsdetailsGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< OrganisationDetailsV3StepView >("/Leads/{leadId}/organisationsdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOrganisationsdetailsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of OrganisationDetailsV3StepView</returns>
+        public async System.Threading.Tasks.Task<OrganisationDetailsV3StepView> LeadsLeadIdOrganisationsdetailsGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OrganisationDetailsV3StepView> localVarResponse = await LeadsLeadIdOrganisationsdetailsGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the organisation details of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (OrganisationDetailsV3StepView)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<OrganisationDetailsV3StepView>> LeadsLeadIdOrganisationsdetailsGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdOrganisationsdetailsGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<OrganisationDetailsV3StepView>("/Leads/{leadId}/organisationsdetails", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdOrganisationsdetailsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>PaymentDataStepView</returns>
+        public PaymentDataStepView LeadsLeadIdPaymentdataGet (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<PaymentDataStepView> localVarResponse = LeadsLeadIdPaymentdataGetWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>ApiResponse of PaymentDataStepView</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse< PaymentDataStepView > LeadsLeadIdPaymentdataGetWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdPaymentdataGet");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get< PaymentDataStepView >("/Leads/{leadId}/paymentdata", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdPaymentdataGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of PaymentDataStepView</returns>
+        public async System.Threading.Tasks.Task<PaymentDataStepView> LeadsLeadIdPaymentdataGetAsync (Guid leadId, string apiVersion = default(string))
+        {
+             YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<PaymentDataStepView> localVarResponse = await LeadsLeadIdPaymentdataGetAsyncWithHttpInfo(leadId, apiVersion);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// An endpoint for viewing the payment data of a lead 
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <returns>Task of ApiResponse (PaymentDataStepView)</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<PaymentDataStepView>> LeadsLeadIdPaymentdataGetAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdPaymentdataGet");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<PaymentDataStepView>("/Leads/{leadId}/paymentdata", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdPaymentdataGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1620,7 +3520,150 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         }
 
         /// <summary>
-        /// Creates a Youlend Advance Lead Can add sample as an example here
+        /// An endpoint for updating the state of an onboarding The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns></returns>
+        public void LeadsLeadIdStatePut (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel))
+        {
+             LeadsLeadIdStatePutWithHttpInfo(leadId, apiVersion, onboardingStateModel);
+        }
+
+        /// <summary>
+        /// An endpoint for updating the state of an onboarding The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object> LeadsLeadIdStatePutWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdStatePut");
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+
+            var localVarContentType = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingStateModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Put<Object>("/Leads/{leadId}/state", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdStatePut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// An endpoint for updating the state of an onboarding The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task LeadsLeadIdStatePutAsync (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel))
+        {
+             await LeadsLeadIdStatePutAsyncWithHttpInfo(leadId, apiVersion, onboardingStateModel);
+
+        }
+
+        /// <summary>
+        /// An endpoint for updating the state of an onboarding The state can only be updated once the relevant documents are submitted, the relevant questions are answered or the relevants documents are signed
+        /// </summary>
+        /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="leadId">The lead id</param>
+        /// <param name="apiVersion"> (optional)</param>
+        /// <param name="onboardingStateModel"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiResponse<Object>> LeadsLeadIdStatePutAsyncWithHttpInfo (Guid leadId, string apiVersion = default(string), OnboardingStateModel onboardingStateModel = default(OnboardingStateModel))
+        {
+            // verify the required parameter 'leadId' is set
+            if (leadId == null)
+                throw new YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException(400, "Missing required parameter 'leadId' when calling LeadsApi->LeadsLeadIdStatePut");
+
+
+            YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions localVarRequestOptions = new YL.Web.Api.ThirdParty.Onboarding.Client.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json",
+                "application/xml"
+            };
+            
+            foreach (var _contentType in _contentTypes)
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
+            
+            foreach (var _accept in _accepts)
+                localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+            
+            if (leadId != null)
+                localVarRequestOptions.PathParameters.Add("leadId", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(leadId)); // path parameter
+            if (apiVersion != null)
+                localVarRequestOptions.HeaderParameters.Add("api-version", YL.Web.Api.ThirdParty.Onboarding.Client.Client.ClientUtils.ParameterToString(apiVersion)); // header parameter
+            localVarRequestOptions.Data = onboardingStateModel;
+
+            // authentication (oauth2) required
+            // oauth required
+            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PutAsync<Object>("/Leads/{leadId}/state", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("LeadsLeadIdStatePut", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Creates a Youlend Advance Lead 
         /// </summary>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -1633,7 +3676,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         }
 
         /// <summary>
-        /// Creates a Youlend Advance Lead Can add sample as an example here
+        /// Creates a Youlend Advance Lead 
         /// </summary>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -1683,7 +3726,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         }
 
         /// <summary>
-        /// Creates a Youlend Advance Lead Can add sample as an example here
+        /// Creates a Youlend Advance Lead 
         /// </summary>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
@@ -1697,7 +3740,7 @@ namespace YL.Web.Api.ThirdParty.Onboarding.Client.Api
         }
 
         /// <summary>
-        /// Creates a Youlend Advance Lead Can add sample as an example here
+        /// Creates a Youlend Advance Lead 
         /// </summary>
         /// <exception cref="YL.Web.Api.ThirdParty.Onboarding.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiVersion"> (optional)</param>
